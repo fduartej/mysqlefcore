@@ -26,10 +26,13 @@ namespace mysqlefcore
         };
         context.Publisher.Add(publisher);
 
+        Random rnd = new Random();
+        int next = rnd.Next(1, 1000);
+
         // Adds some books
         context.Book.Add(new Book
         {
-          ISBN = "978-0544003415",
+          ISBN = "978-0544003415"+next,
           Title = "The Lord of the Rings",
           Author = "J.R.R. Tolkien",
           Language = "English",
@@ -38,7 +41,7 @@ namespace mysqlefcore
         });
         context.Book.Add(new Book
         {
-          ISBN = "978-0547247762",
+          ISBN = "978-0547247762"+next,
           Title = "The Sealed Letter",
           Author = "Emma Donoghue",
           Language = "English",
