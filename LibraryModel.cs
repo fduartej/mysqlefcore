@@ -23,4 +23,18 @@ namespace mysqlefcore
     public virtual ICollection<Book> Books { get; set; }
   }
 
+
+  public class Student{
+    public int ID { get; set; }
+    public string FirstName { get; set; }
+
+    public string LastName { get; set; }
+
+    public string Gender { get; set; }
+
+    public DateTime BirthDay { get; set; }
+
+    public decimal Gratification { get; set; }
+
+  }
 }
